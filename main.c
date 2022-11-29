@@ -13,11 +13,15 @@ struct student{
 };
 
 int main(void){
-	struct student s1;
+	struct student s1 = {2411,"saeyeon",4.3};
 	
-	s1.ID = 2411;
-	strcpy(s1.name,"saeyeon");
-	s1.grade=4.3;
+	s1.ID = 2115;
+	strcpy(s1.name,"saesoon");
+	s1.grade= 4.1;
+	
+	printf("ID : %d\n",s1.ID);
+	printf("name : %s\n",s1.name);
+	printf("grade : %f\n",s1.grade);
 	
 	return 0;
 	
